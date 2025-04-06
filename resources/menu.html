@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu</title>
+        <meta charset="UTF-8" lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/test.content.css">
+        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            h1 {
+                text-align: center;
+                font-weight: bold;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding: 1em 1em 1em 1em;
+                text-shadow: -2px 0 blue, 0 2px white, 2px 0 red, 0 -2px white;
+                font-size: 3.2rem;
+                letter-spacing: 0.1em;
+            }
+            .popular {
+                width: 80%;
+                margin: auto;
+            }
+            .grid {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                display: grid;
+                grid-gap: 1em;
+            }
+            .grid p {
+                background: beige;
+                padding: 0.3em 0 0.3em 0.3em;
+                font-family: cursive;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            .grid p:hover {
+                color :white;
+                background-image: linear-gradient(to right, rgb(236, 236, 71), orange, red);
+            }
+            section {
+                width: 80%;
+                margin: auto;
+            }
+            .grid-menu {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(17, 1fr);
+                display: grid;
+                grid-gap: 1em;
+            }
+            .grid-menu p {
+                background: beige;
+                padding: 0.3em 0 0.3em 0.3em;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            .grid-menu p:hover {
+                color :white;
+                background: red;
+            }
+            @media (min-width: 1440px) {
+                .grid p, .grid-menu p {
+                    background: white;
+                }
+                .grid-menu p:hover {
+                    background: red;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul class="left">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Members Page</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="../index.html">Home<i class="fa fa-home"></i></a></li>
+            </ul>
+        </nav>
+
+        <img class="banner" src="../images/menus.png">
+        <h1>Popular Now!</h1>
+        <div class="popular">
+            <div class="grid">
+                <div><p>Durian Chendol 榴莲前罗<br>$3.40</p></div>
+                <div><p>Soursop Longan 红毛榴莲龙眼和创冰<br>$3.40</p></div>
+                <div><p>Red Ruby 红宝石<br>$3.00</p></div>   
+                <div><p>Durian Ice Kachang 榴莲红豆冰<br>$3.40</p></div>
+                <div><p>Mango Ice Kachang 芒果红豆冰<br>$3.60</p></div>
+                <div><p>Bing Bing Ice Kachang 冰冰球红豆冰<br>$3.60</p></div>
+            </div>
+        </div>
+
+        <h1>Desserts</h1>
+        <section>
+            <div class="grid-menu">
+                <div><p>Mango Longan 芒果龙眼<br>$3.00</p></div>
+                <div><p>Strawberry Longan 草莓龙眼<br>$2.70</p></div>
+                <div><p>Blue Grape Longan 蓝葡萄龙眼<br>$2.70</p></div>
+                <div><p>Iced Longan 龙眼水<br>$2.00</p></div>
+
+                <div><p>Chendol 前罗<br>$2.40</p></div>
+
+                <div><p>Strawberry Ice Kachang 草莓红豆冰<br>$3.40</p></div>
+                <div><p>Chocolate Ice Kachang 巧克力红豆冰<br>$3.40</p></div>
+                <div><p>Tadpole Ice Kachang 蝌蚪红豆冰<br>$2.70</p></div>
+                <div><p>Peanut Ice Kachang 花生红豆冰<br>$3.40</p></div>
+
+                <div><p>BoBo-ChaCha* 博博查恰<br>$2.40</p></div>
+                <div><p>Durian BoBo-ChaCha 榴莲博博查恰<br>$3.40</p></div>
+                <div><p>Tadpole BoBo-ChaCha 蝌蚪红豆冰<br>$3.60</p></div>
+
+                <div><p>Sea Coconut* 海底椰<br>$3.35</p></div>
+                <div><p>Sea Coconut Longan 海底椰龙眼<br>$3.40</p></div>
+                <div><p>Aloe Vera Sea Coconut 芦荟海底椰<br>$3.40</p></div>
+                <div><p>Honey with Ice ball Sea Coconut 蜜糖海底椰Q园露<br>$3.40</p></div>
+                <div><p>Blue Grape Sea Coconut 蓝葡萄海底椰<br>$3.60</p></div>
+                <div><p>Avocado Sea Coconut 鳄梨海椰子<br>$4.70</p></div>
+                
+                <div><p>Soursop 红毛榴莲<br>$3.40</p></div>
+                <div><p>Soursop Mixed Fruit 红毛榴莲杂果<br>$3.40</p></div>
+
+                <div><p>Ice Jelly Cocktail 文头雪<br>$2.40</p></div>
+                <div><p>Aloe Vera Ice Jelly Cocktail<br>$3.40</p></div>
+
+                <div><p>Green Bean Soup 红豆汤<br>$1.80</p></div>
+                <div><p>Red Bean Soup 绿豆汤<br>$1.80</p></div>
+
+                <div><p>Cheng Tng* 清汤<br>$2.40</p></div>
+                <div><p>Lovers World 二人世界<br>$3.50</p></div>
+                <div><p>Gui Lin Gao 龟苓膏<br>$3.60</p></div>
+                <div><p>Ginko nut with Barley 大麦银杏果<br>$2.40</p></div>
+                <div><p>Tapioca with Coconut Milk 椰奶木薯粉<br>$2.20</p></div>
+                <div><p>Almond Beancurd 杏仁豆腐<br>$2.20</p></div>
+                <div><p>BoBo-Terigu 大麦<br>$1.80</p></div>
+                <div><p>Bubor Hitam 黑糯米<br>$1.80</p></div>
+                <div><p>Tau Suan 豆爽<br>$1.80</p></div>
+                <div><p>Four Season 四季香<br>$3.40</p></div>
+            </div>
+        </section>
+        <br>
+        <p>* Some of the dessert items are served in both hot and cold</p>
+        <br>
+        <footer>
+            <p>Copyright &#169; 2022 by HJSETO</p>
+        </footer>
+    </body>
+</html>

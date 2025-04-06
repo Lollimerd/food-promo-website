@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<head>
+  <!--content size for devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" lang="en">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/test.content.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Home Page</title>
+  <style>
+  h1 {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.6rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+  }
+  .center {
+    display: flex;
+  }
+  nav ul li {
+    padding: 0.6em 2em 0.6em 2em;
+  }
+.promo-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: rgb(221, 9, 9);
+  padding: 0.5em 0 0.5em 0;
+  animation: mymove 4s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes mymove {
+  0% {background-color: red;}
+  25% {background-color: yellowgreen; 
+    border-radius: 30% 30% 0 0; 
+    box-shadow: inset 10px 20px 30px cyan, 10px 20px 30px blue;}
+  50% {box-shadow: inset 10px 20px 35px red, 20px 20px 50px darkred; 
+    background-color: orange; 
+    border-radius: 30% 30% 30% 30%}
+  75% {background-color: yellow; 
+    border-radius: 30% 30% 0 0; 
+    box-shadow: inset 20px 20px 50px 10px white, 
+    20px 20px 50px orangered;}
+  100% {border-radius: 0 0 0 0; 
+    box-shadow: 20px 20px 50px orangered, 20px 20px 50px orangered outset;}
+}
+.drop {
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
+    border-radius: 53% 47% 51% 49%/49% 41% 59% 51%;
+    box-shadow: inset 10px 10px 30px rgba(0,0,0,0.1), 
+    15px 25px 20px rgba(0,0,0,0.08),
+    15px 25px 25px rgba(0,0,0,0.1),
+    inset -10px -10px 15px rgba(255,255,255,0.6);
+    position: relative;
+    background: red;
+}
+.drop::before, .drop::after {
+  content: "";
+  position: absolute;
+  background-color:rgba(0,0,0,0.6);
+}
+.drop::before{
+  width: 20px;
+  height: 30px;
+  border-radius: 32% 68% 40% 60% / 36% 53% 47% 64%;
+  top: left;
+  left: 95px;
+  transform: rotate(-5deg);
+}
+.drop::after {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 75px;
+  left: 110px;
+}
+fieldset {
+    padding: 0 0 0 1.6em;
+    width: 35%;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- Extra info inside box -->
+  <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger">
+        <div>&#9432;</div>
+      </div>
+    <div class="menu">
+      <div>
+        <div>
+          <div class="text">
+            <h1>About the shop and the area</h1>
+            <img src="images/screenshot.jpg" class="corridor"><br>
+              <p>
+                  Craving of desserts does not stop here! There are a wide variety of hot and cold desserts from this store alone
+                  and from comparing with a few of other stores, this store's desserts taste are by far the most local
+                  and authentic personally. The location is also not far away from the nearest MRT station, Yishun. Nearby this 
+                  dessert shop is a famous Yong Tao Foo stall, a supermarket and a bunch of other shops that are 
+                  further down the corridor. There is a link to food review regarding about this dessert shop and 
+                  so far it has been positive.
+              </p>
+              <br>
+              <p class="hot">
+                Hot desserts <em>(Recommended)</em> : Tau Suan, BoBo-ChaCha, BurBur-Hitam 
+              </p>
+              <p class="cold">
+                Cold Desserts <em>(Recommended)</em> : Ice Kachang, Ice Jelly, Cheng Tng, BoBo-ChaCha
+              </p>
+              <br>
+              <h1>What is so good about local desserts?</h1>
+              <p>
+                Singaporeans has evolved the culture and has been named food paradise by tourists and the locals. Its convenient, can eat on the go 
+                and its made from the most authentic ingredients.
+                Especially for cold desserts, it gives the shiok feeling to the customers for that chilling satisfaction. You should try it too!
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="showcase">
+    <div class="container showcase-inner">
+      <h1>Welcome to LIT LIT XIN Hot & Cold Dessert</h1><br>
+      <a href="resources/registration.html" class="info" target="_blank" title="click to get free perks">Register a free account now!</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="center">
+        <li><a href="resources/menu.html" title="menu selection">Menu</a></li>
+        <li><a href="resources/order.html" title="Place your orders">Order</a></li>
+        <li><a href="resources/contact.html" title="contact particulars">Contact Us &#9990;</a></li>
+        <li><a href="resources/login.html" title="register an account/login">Members Page</a></li>
+    </ul>
+  </nav>
+
+  <div class="promo-logo">
+    <div class="drop"></div>
+    <h1 class="promos">Promotions</h1>
+    <div class="drop"></div>
+  </div>
+
+  <section>
+  <br>
+  <h1>New Year's Special!</h1>
+  <br>
+  <div class="flex">
+    <fieldset>
+      <legend>Ice Jelly</legend>
+      <img class="promo-1" src="images/ice jelly.jpg">
+      <br>
+      <br>
+      <p>U.P: $ 2.20 Promo: $1.80</p>
+    </fieldset>
+    <fieldset>
+      <legend>Chendol</legend>
+      <img class="promo-2" src="images/chendol.png">
+      <br>
+      <br>
+      <p>U.P: $2.20 Promo: $1.60</p>
+    </fieldset>
+    <fieldset>
+      <legend>BurBur-Hitam</legend>
+      <img class="promo-3" src="images/hitam.png">
+      <br>
+      <br>
+      <p>U.P: $2.20 Promo: $1.50</p>
+    </fieldset>
+    </div>
+</section>
+<br>
+
+<h1>Reviews from Customers</h1>
+<section class="food-rev">
+  <div class="rev">
+    <h1>Ice Kachang</h1>
+    <img class="rev-1" src="images/ice kachang.png">
+    <p>There is a few variants of the Ice Kachang here, such as the chocolate variant but this is still the best. The coloured syrup was sweet, 
+      without the addition of too much water to dilute it and together with the condensed milk, is a comforting sweet treat on a sunny day. 
+      The ice is also shaved very fine; no need to chew here. They are also generous with their other condiments such as corn and red bean as well.</p>
+    <p class="date">Apr 20 2017 <br>
+      <a href="https://www.burpple.com/blk-928-lit-lit-sin-cold-hot-dessert-2" 
+      target="_blank" class="date">Read more...</a></p>
+    </div>
+  <div class="rev">
+    <h1>BurBur-ChaCha</h1>
+    <img class="rev-2" src="images/bbcc.png">
+    <p>For a rainy day like this, piping hot bubur chacha is worth braving the cats and dogs for. 
+      Comfort food at only $1.40.</p>
+    <p class="date">Jun 11 2016 <br>
+      <a href="https://www.burpple.com/blk-928-lit-lit-sin-cold-hot-dessert-2" 
+      target="_blank" class="date">Read more...</a></p>
+  </div>
+  <div class="rev">
+    <h1>BurBur-Hitam</h1>
+    <img class="rev-3" src="images/hitam.png">
+    <p>Was just of the right level of sweetness as it was ample to bring its taste yet not cloying at all. The amount of coconut milk was also just enough to flavour it as well.</p>
+    <p class="date">Jun 16 2014 <br>
+      <a href="https://www.burpple.com/blk-928-lit-lit-sin-cold-hot-dessert-2" 
+      target="_blank" class="date">Read more...</a></p>
+  </div>
+</section>
+
+<br>
+<footer>
+  <p>Copyright &#169; 2022 by HJ SETO</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Now!</title>
+        <meta charset="UTF-8" lang="en">
+        <meta name="viewport" content="width=device-width" initial-scale=1>
+        <link rel="stylesheet" href="../css/test.content.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            * {
+                padding: 0px;
+                margin: 5px;
+            }
+            h1 {
+                background: orangered;
+                text-align: center;
+            }
+            label {
+                font-weight: bold;
+            }
+            input {
+                margin-bottom: 20px;
+                background: transparent;
+            }
+            input[type="text"], input[type="password"] {
+                border: none;
+                border-bottom: 2px solid black;
+                outline: none;
+                color: black;
+                font-size: 16px;
+                width: 98%;
+                margin-left: 1%;
+            }
+            input[type="submit"] {
+                border-radius: 20%;
+                background: black;
+                color: white;
+                padding: 0.1em 0.5em 0.1em 0.5em;
+            }
+            input[type="submit"]:hover {
+                cursor:pointer;
+                background: orange;
+                color: black;
+                font-family: fantasy;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <h1>Member Registration</h1>
+            <form  method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+            <fieldset>
+                <legend>Account Particulars</legend>
+                <label>Username:</label>
+                <input type="text" name="name" placeholder="5 to 30 characters long" required pattern="[a-zA-Z0-9]{5,30}"><br>
+                <label>Contact No.</label>
+                <input type="text" placeholder="e.g +65 12345678" required pattern="[0-9]{8}"><br>
+                <label>Gender:</label>
+                <input type="radio" name="gender" required checked="checked">Male
+                <input type="radio" name="gender" required>Female<br>
+                <label>Email:</label>
+                <input type="text" name="email" placeholder="designated email" required><br>
+                <label>Password:</label>
+                <input type="password" name="password" required placeholder="input password (8 to 16 characters long)" pattern="[a-zA-Z0-9]{8,16}">
+                <label>Confirm Password</label>
+                <input type="password" name="pass" required placeholder="confirm password" pattern="[a-zA-Z0-9]{8,16}">
+                <label>Address:</label><br>
+                <textarea name="location" rows="5" cols="60" placeholder="Home Address"></textarea><br>
+                <input type="submit" value="register">
+            </fieldset>
+            </form>
+            <a href="login.html">Go Back</a>
+        </section>
+    </body>
+</html>

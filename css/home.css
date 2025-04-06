@@ -1,0 +1,182 @@
+:root {
+    --primary-color: rgba(71, 70, 58, 0.75);
+    --overlay-color: rgba(16, 17, 17, 0.788);
+    --menu-speed: 0.75s;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+  }
+  .showcase {
+    background: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    opacity: 0.55;
+  } 
+  .showcase:before {
+    content: '';
+    background: url('../images/download (1).jpg') 
+    no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: -1;
+    image-rendering: pixelated;
+  }  
+  .showcase .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }  
+  .showcase h1 {
+    font-size: 3.2rem;
+    color:rgba(228, 15, 15, 0.85);
+    border: 15px ridge;
+    padding: 0.5em 0.2em 0.5em 0.2em;
+  }
+  .showcase p {
+    font-size: 1.3rem;
+  }
+  .info {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .info:hover {
+    background-color: #3e8e41
+  }
+  .info:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  /* Info Box STYLES */
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+
+
+  /* informative box */
+  .menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1.1;
+  }
+  .menu-wrap .hamburger > div {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+
+  /* Toggler Animation */
+  .menu-wrap .toggler:checked + .hamburger > div {
+    transition: 1s;
+    transform: rotate(360deg);
+  }
+  /* Rotate On Hover When Checked */
+  .menu-wrap .toggler:checked:hover + .hamburger > div {
+    transition: 1s;
+    transform: rotate(300deg);
+  }
+
+
+  /* Show info when checked */
+  .menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+  }
+  .menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+  }
+  .menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s;
+  }
+  
+
+  .menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* 1st div - animation */
+  .menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  /* 2nd div - dimensions of menu display */
+  .menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    align-items: center;
+    justify-content: center;
+  }
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Members page</title>
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/test.content.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .loginbox {
+            width: 350px;
+            background: violet;
+            height: 420px;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: 125px;
+            left: calc(50%-50px);
+        }
+        h1 {
+            margin: 0;
+            padding: 3em 0 20px;
+            text-align: center;
+            font-size: 22px;
+            margin: auto;
+            color: white;
+        }
+        p {
+            color: white;
+            padding: 0 0 0 0.5em;
+        }
+        .loginbox input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .loginbox input[type="text"], input[type="password"] {
+            border: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: white;
+            font-size: 16px;
+            width: 95%;
+            margin-left: 2.5%;
+        }
+        .loginbox input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #fb2525;
+            color: white;
+            font-size: 18px;
+            border-radius: 20px; 
+        }
+        .loginbox input[type="submit"]:hover {
+            cursor: pointer;
+            background: yellow;
+            color: #000;
+        }
+        .loginbox a {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 20px;
+            color: darkgrey;
+        }
+        .loginbox a:hover {
+            color: #ffc107;
+        }
+    </style>
+    </head>
+    <body>
+        <nav>
+            <ul class="left">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Members Page</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="../index.html"><i class="fa fa-home"></i></a></li>
+            </ul>
+        </nav>
+        <section>
+            <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+            <div class="loginbox">
+                <img src="../images/profile.jpg" class="avatar">
+                <h1>Login Here</h1><br>
+                <p>Username</p>
+                <input type="text" name="user" placeholder="Enter Username" required pattern="[0-9a-zA-Z]{5,30}">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="Enter Password" required pattern="[0-9a-zA-Z]{8,16}">
+                <input type="submit" name="" value="Login">
+                <a href="recover.html">Lost your password?</a><br>
+                <a href="registration.html">Don't have an account?</a>
+            </div>
+            </form>
+        </section>
+    </body>
+</html>

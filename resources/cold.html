@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/test.content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>bING ChillING</title>
+    <style>
+        section {
+            width: 90%;
+            margin: auto;
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+        .grid-cold {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            display: grid;
+            grid-gap: 3em;
+            height: 600px;
+        }          
+        .cat1, .cat2, .cat3, .cat4, .cat5, .cat6{
+            background: beige;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .cat1:hover, .cat2:hover, .cat3:hover, .cat4:hover, .cat5:hover, .cat6:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .cat1 img, .cat2 img, .cat3 img, .cat4 img, .cat5 img, .cat6 img {
+            width: 100%;
+            height: 70%;
+        }
+        .orders {
+            position: fixed;
+            bottom: 50px;
+            right: 100px;
+        }
+        input[type="submit"], input[type="button"] {
+            padding: 0.3em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="left">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Members Page</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="../index.html"><i class="fa fa-home"></i></a></li>
+        </ul>
+    </nav>
+    <section>
+        <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <div class="grid-cold">
+            <div class="cat1">
+                <img src="../images/chendol.jpg">
+                <h2>Chendol</h2>
+                <label>Type:</label>
+                <select name="ch">
+                    <option value="def">normal -$2.40</option>
+                    <option value="dur">durian -$3.40</option>
+                </select>
+                <div class="qtn">
+                <label>Quantity</label>
+                <input type="number" min="0" max="10" required name="ch" value="0">
+                </div>
+            </div>
+            <div class="cat2">
+                <img src="../images/ice kachang.png">
+                <h2>Icy Slushes</h2>
+                <label>Type:</label>
+                <select name="ice k" required>
+                    <option value="def">Ice Kachang - $2.70</option>
+                    <option value="stw">Strawberry - $3.40</option>
+                    <option value="dur">Durian - $3.40</option>
+                    <option value="choc">Chocolate - $3.40</option>
+                    <option value="tp">Tadpole - $2.70</option>
+                    <option value="pea">Peanut - $3.40</option>
+                    <option value="love">Lovers World - $3.50</option>
+                </select>
+                <div class="qtn2">
+                    <label>Quantity</label>
+                    <input type="number" min="0" max="10" required name="ice k" value="0">
+                </div>
+            </div>
+            <div class="cat3">
+                <img src="../images/bbcc.png">
+                <h2>BoBo-Chacha</h2>
+                <label>Type:</label>
+                <select name="bbcc" required>
+                    <option value="def">normal - $2.40</option>
+                    <option value="dur">Durian - $3.40</option>
+                    <option value="tp">Tadpole - $3.60</option>
+                </select>
+                <div class="qtn3">
+                    <label>Quantity</label>
+                    <input type="number" min="0" max="10" required name="bbcc" value="0">
+                </div>
+            </div>
+            <div class="cat4">
+                <img src="../images/sc.jpg">
+                <h2>Sea Coconut</h2>
+                <label>Type:</label>
+                <select name="se c" required>
+                    <option value="H w ice b">Honey with Ice Ball - $3.40</option>
+                    <option value="lg">Longan - $3.40</option>
+                    <option value="def">Normal -$3.35 </option>
+                    <option value="avac">Avocado - $4.70</option>
+                    <option value="aloe vera">Aloe Vera - $3.40</option>
+                </select>
+                <div class="qtn4">
+                    <label>Quantity</label>
+                    <input type="number" min="0" max="10" required name="sea coconut" value="0">
+                </div>
+            </div>
+            <div class="cat5">
+                <img src="../images/lg des.jpg">
+                <h2>Longan</h2>
+                <label>Type:</label>
+                <select name="ssp">
+                    <option value="mixed">Mixed fruit - $3.40</option>
+                    <option value="s">Soursop - $3.40</option>
+                </select>
+                <div class="qtn5">
+                    <label>Quantity</label>
+                    <input type="number" min="0" max="10" required name="ssp" value="0">
+                </div>
+            </div>
+            <div class="cat6">
+                <img src="../images/ice jelly.jpg">
+                <h2>Jelly Delights</h2>
+                <label>Type:</label>
+                <select name="Ice J">
+                    <option value="def">normal - $2.40</option>
+                    <option value="al ver">Aloe Vera - $3.40</option>
+                    <option value="CT">Cheng Tng - $2.40</option>
+                </select>
+                <div class="qtn6">
+                    <label>Quantity</label>
+                    <input type="number" min="0" max="10" required name="Ice J" value="0">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="orders">
+        <input type="submit" value="Order Now!">
+        <a href="order.html"><input type="button" value="back"></a>
+    </div>
+        </form>
+    </section>
+</body>
+</html>

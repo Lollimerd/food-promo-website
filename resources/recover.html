@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+    <link rel="stylesheet" href="../css/test.content.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 5px;
+        }
+        input[type="password"]{
+            width: 95%;
+        }
+        input[type="submit"] {
+            border-radius: 5%;
+            padding: 0.5em;
+        }
+        a {
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Forget password</h1>
+        <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <fieldset>
+            <legend>Reset Password</legend>
+            <label>Old Password:</label>
+            <input type="password" placeholder="your previous password" name="prev" pattern="[a-zA-Z0-9]{8,16}" required><br>
+            <label>New Password:</label>
+            <input type="password" placeholder="new password" name="new" pattern="[a-zA-Z0-9]{8,16}" required>
+            <label>Confirm Password:</label>
+            <input type="password" name="confirm" pattern="[a-zA-Z0-9]{8,16}" placeholder="confirm password" required><br>
+            <input type="submit" value="reset"><br>
+            <a href="login.html">Back</a>
+        </fieldset>
+        </form>
+    </section>
+</body>
+</html>
