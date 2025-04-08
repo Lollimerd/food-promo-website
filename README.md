@@ -1,7 +1,7 @@
 # Front End Website Project
 
 ## Overview
-This repository describes how I recreate LIT LIT XIN Hot & Cold Dessert website, a local Singaporean dessert shop specializing in authentic hot and cold desserts. The website provides information about the shop, menu, promotions, and customer reviews.
+This repository describes how I recreate the website of local dessert shop LIT LIT XIN Hot & Cold Dessert, a local Singaporean dessert shop specializing in authentic hot and cold desserts. The website provides information about the shop, menu, promotions, and customer reviews.
 
 ## File Structure
 - `index.html` - Main homepage
